@@ -44,7 +44,7 @@ export function ProcessSection() {
 
     return (
         <section ref={containerRef} className="py-24 bg-white">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 md:px-6">
                 <div className="grid lg:grid-cols-2 gap-16 items-start">
                     {/* Left - Sticky Header */}
                     <div className="lg:sticky lg:top-32">

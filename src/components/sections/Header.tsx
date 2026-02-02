@@ -30,7 +30,7 @@ export function Header() {
                 ? "bg-white/90 backdrop-blur-lg border-b border-gray-100 py-3"
                 : "bg-transparent py-5"
         )}>
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 md:px-6">
                 <nav className="flex items-center justify-between">
                     <Link href="/" className={cn(
                         "font-bold text-lg transition-colors",
@@ -82,25 +82,27 @@ export function Header() {
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -10 }}
+                        initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        className="md:hidden bg-white border-b border-gray-100 shadow-lg"
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="fixed inset-0 z-40 bg-white md:hidden flex flex-col justify-center items-center"
                     >
-                        <div className="container mx-auto px-6 py-4 flex flex-col gap-3">
+                        <div className="flex flex-col items-center gap-8 w-full px-6">
                             {navItems.map((item) => (
                                 <Link
                                     key={item.name}
                                     href={item.href}
-                                    className="text-gray-600 py-2"
+                                    className="text-2xl font-bold text-gray-900 hover:text-purple-600 transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {item.name}
                                 </Link>
                             ))}
+                            <div className="w-full max-w-xs h-px bg-gray-100 my-2" />
                             <Link
                                 href="/start"
-                                className="bg-gray-900 text-white text-center py-3 rounded-lg mt-2"
+                                className="bg-gray-900 text-white text-lg font-bold px-8 py-4 rounded-xl w-full max-w-xs text-center shadow-lg active:scale-95 transition-transform"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 무료 상담

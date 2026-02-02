@@ -57,7 +57,7 @@ const features = [
 export function USPSection() {
     return (
         <section id="services" className="py-24 bg-gray-50">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <motion.p
                         initial={{ opacity: 0, y: 10 }}

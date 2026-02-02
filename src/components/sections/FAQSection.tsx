@@ -32,7 +32,7 @@ export function FAQSection() {
 
     return (
         <section id="faq" className="py-24 bg-white">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 md:px-6">
                 <div className="grid lg:grid-cols-2 gap-16">
                     {/* Left - Header */}
                     <div className="lg:sticky lg:top-32 lg:self-start">

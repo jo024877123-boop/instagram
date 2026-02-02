@@ -7,12 +7,12 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 export function CTASection() {
     return (
         <section className="py-24">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 md:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="relative overflow-hidden bg-gradient-to-br from-purple-600 via-purple-700 to-purple-900 rounded-3xl p-12 md:p-16"
+                    className="relative overflow-hidden bg-gradient-to-br from-purple-600 via-purple-700 to-purple-900 rounded-3xl p-6 md:p-16"
                 >
                     {/* Background Elements */}
                     <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />

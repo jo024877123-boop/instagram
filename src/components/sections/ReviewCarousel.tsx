@@ -17,7 +17,7 @@ const reviewsReversed = [...reviews].reverse();
 export function ReviewCarousel() {
     return (
         <section className="py-24 bg-white overflow-hidden">
-            <div className="container mx-auto px-6 mb-12">
+            <div className="container mx-auto px-4 md:px-6 mb-12">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between">
                     <div>
                         <motion.p
@@ -67,7 +67,7 @@ export function ReviewCarousel() {
                     {[...reviews, ...reviews].map((review, i) => (
                         <div
                             key={i}
-                            className="flex-shrink-0 w-[400px] bg-gray-50 rounded-2xl p-6 border border-gray-100"
+                            className="flex-shrink-0 w-[300px] md:w-[400px] bg-gray-50 rounded-2xl p-6 border border-gray-100"
                         >
                             <Quote className="w-8 h-8 text-purple-200 mb-4" />
                             <p className="text-gray-700 mb-4 leading-relaxed">{review.content}</p>
@@ -100,7 +100,7 @@ export function ReviewCarousel() {
                     {[...reviewsReversed, ...reviewsReversed].map((review, i) => (
                         <div
                             key={i}
-                            className="flex-shrink-0 w-[400px] bg-gray-50 rounded-2xl p-6 border border-gray-100"
+                            className="flex-shrink-0 w-[300px] md:w-[400px] bg-gray-50 rounded-2xl p-6 border border-gray-100"
                         >
                             <Quote className="w-8 h-8 text-purple-200 mb-4" />
                             <p className="text-gray-700 mb-4 leading-relaxed">{review.content}</p>

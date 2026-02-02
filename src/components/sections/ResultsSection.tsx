@@ -38,7 +38,7 @@ const results = [
 export function ResultsSection() {
     return (
         <section className="py-24 bg-gray-900 text-white">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 md:px-6">
                 {/* Header - Split Layout */}
                 <div className="grid lg:grid-cols-2 gap-12 items-end mb-16">
                     <div>
@@ -81,7 +81,7 @@ export function ResultsSection() {
                 </div>
 
                 {/* Horizontal Scroll Cards */}
-                <div className="flex gap-6 overflow-x-auto pb-4 -mx-6 px-6 scrollbar-hide">
+                <div className="flex gap-6 overflow-x-auto pb-4 -mx-4 md:-mx-6 px-4 md:px-6 scrollbar-hide">
                     {results.map((result, index) => (
                         <motion.div
                             key={index}

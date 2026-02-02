@@ -29,7 +29,7 @@ const plans = [
 export function PricingSection() {
     return (
         <section id="pricing" className="py-24 bg-gray-50">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-16">
                     <motion.p
                         initial={{ opacity: 0, y: 10 }}
@@ -68,8 +68,8 @@ export function PricingSection() {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
                                 className={`relative p-8 ${plan.popular
-                                        ? "bg-purple-600 text-white md:-my-4 md:py-12 md:scale-105 z-10 rounded-3xl shadow-2xl"
-                                        : "border-r border-gray-100 last:border-r-0"
+                                    ? "bg-purple-600 text-white md:-my-4 md:py-12 md:scale-105 z-10 rounded-3xl shadow-2xl"
+                                    : "border-r border-gray-100 last:border-r-0"
                                     }`}
                             >
                                 {plan.popular && (
@@ -108,8 +108,8 @@ export function PricingSection() {
                                 <Link
                                     href="/start"
                                     className={`block text-center py-3 rounded-xl font-medium transition-all ${plan.popular
-                                            ? "bg-white text-purple-600 hover:bg-gray-100"
-                                            : "bg-gray-100 text-gray-900 hover:bg-gray-200"
+                                        ? "bg-white text-purple-600 hover:bg-gray-100"
+                                        : "bg-gray-100 text-gray-900 hover:bg-gray-200"
                                         }`}
                                 >
                                     시작하기

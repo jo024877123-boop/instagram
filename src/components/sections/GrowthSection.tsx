@@ -203,7 +203,7 @@ export function GrowthSection() {
 
     return (
         <section ref={containerRef} className="py-24 bg-white overflow-hidden">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 md:px-6">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <motion.p
@@ -249,7 +249,7 @@ export function GrowthSection() {
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
                             whileHover={{ y: -5 }}
-                            className="bg-gray-50 rounded-2xl p-6 text-center cursor-default"
+                            className="bg-gray-50 rounded-2xl p-4 md:p-6 text-center cursor-default"
                         >
                             <div className={`text-3xl md:text-4xl font-bold ${stat.color} mb-2`}>
                                 <CountUp
